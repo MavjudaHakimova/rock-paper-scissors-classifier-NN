@@ -91,7 +91,7 @@ rps-classifier/
 1. Клонирование репозитория
 
 ```
-git clone [<repository-url>](https://github.com/MavjudaHakimova/rock-paper-scissors-classifier-NN.git)
+git clone https://github.com/MavjudaHakimova/rock-paper-scissors-classifier-NN.git
 ```
 
 2. Перейдите в директорию проекта
