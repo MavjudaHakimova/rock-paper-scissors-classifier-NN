@@ -1,0 +1,4 @@
+# conf/model/inference_model.yaml
+model:
+  num_classes: 3
+  checkpoint_path: "rps_model_32_3.pth" # путь к обученной модели

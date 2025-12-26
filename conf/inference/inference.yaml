@@ -1,0 +1,19 @@
+defaults:
+  - ../logging: logging
+  - ../trainer: trainer
+  - _self_
+
+data:
+  single_image_path: null
+  image_size: 224
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+  class_names: ["rock", "paper", "scissors"]
+
+model:
+  num_classes: 3
+  checkpoint_path: null
+
+output_file: "rps_inference_result.pth"
+inference:
+  single_image_mode: true

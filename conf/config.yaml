@@ -1,0 +1,9 @@
+defaults:
+  - data: data
+  - model: model
+  - logging: logging
+  - trainer: trainer
+  - _self_
+
+num_epochs: 4
+output_file: "rps_model_${data.train_batch_size}_${model.num_classes}.pth"
