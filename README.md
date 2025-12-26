@@ -130,3 +130,5 @@ make infer
    ```
    make lint
    ```
+   ![telegram-cloud-photo-size-2-5366557535118233941-y](https://github.com/user-attachments/assets/6aab95e2-9bc6-4223-8d10-57c76db25229)
+
