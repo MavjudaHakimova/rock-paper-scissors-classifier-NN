@@ -59,9 +59,7 @@ https://www.kaggle.com/datasets/sanikamal/rock-paper-scissors-dataset/data
 - Линейный классификационный слой для финальной классификации
 
 ### Внедрение
-
-Создание веб-сервиса на основе FastAPI для классификации жестов. Для
-развёртывания используется Docker контейнеризация.
+Проект можно собрать с помощью `Makefile`
 
 ## Структура проекта
 
@@ -93,7 +91,7 @@ rps-classifier/
 1. Клонирование репозитория
 
 ```
-git clone <repository-url>
+git clone https://github.com/MavjudaHakimova/rock-paper-scissors-classifier-NN.git
 ```
 
 2. Перейдите в директорию проекта
@@ -127,3 +125,8 @@ make test
 ```
 make infer
 ```
+
+7. Для автоматической проверки pre-commit можно сделать
+   ```
+   make lint
+   ```
