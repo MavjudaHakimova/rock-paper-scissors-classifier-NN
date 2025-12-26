@@ -126,4 +126,7 @@ make test
 make infer
 ```
 
-7. Для автоматической проверки pre-commit можно сделать make lint
+7. Для автоматической проверки pre-commit можно сделать
+   ```
+   make lint
+   ```
