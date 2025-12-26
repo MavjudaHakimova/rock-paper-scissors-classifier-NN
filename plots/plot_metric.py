@@ -1,5 +1,6 @@
-import matplotlib.pyplot as plt
 import os
+
+import matplotlib.pyplot as plt
 
 
 def save_metrics_plots(trainer, output_dir="plots"):

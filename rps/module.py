@@ -1,8 +1,9 @@
 import lightning as L
 import torch
 import torch.nn.functional as F
-from rps.model import FeatureExtractor
 from torchmetrics import Accuracy, F1Score
+
+from rps.model import FeatureExtractor
 
 
 class RPSModule(L.LightningModule):
@@ -15,19 +16,13 @@ class RPSModule(L.LightningModule):
 
         # Метрики для всех стадий
         self.train_accuracy = Accuracy(task="multiclass", num_classes=num_classes)
-        self.train_f1 = F1Score(
-            task="multiclass", num_classes=num_classes, average="macro"
-        )
+        self.train_f1 = F1Score(task="multiclass", num_classes=num_classes, average="macro")
 
         self.val_accuracy = Accuracy(task="multiclass", num_classes=num_classes)
-        self.val_f1 = F1Score(
-            task="multiclass", num_classes=num_classes, average="macro"
-        )
+        self.val_f1 = F1Score(task="multiclass", num_classes=num_classes, average="macro")
 
         self.test_accuracy = Accuracy(task="multiclass", num_classes=num_classes)
-        self.test_f1 = F1Score(
-            task="multiclass", num_classes=num_classes, average="macro"
-        )
+        self.test_f1 = F1Score(task="multiclass", num_classes=num_classes, average="macro")
 
     def forward(self, x):
         features = self.feature_extractor(x)

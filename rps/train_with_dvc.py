@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import git
 import hydra
 import lightning as L
@@ -5,11 +7,11 @@ import mlflow
 import torch
 from lightning.pytorch.loggers import MLFlowLogger
 from omegaconf import DictConfig, OmegaConf
+
 from plots.plot_metric import save_metrics_plots
 from rps.data import RPSDataModule
 from rps.module import RPSModule
 from rps.utils.dvc_data import download_data
-from pathlib import Path
 
 DVC_AVAILABLE = True
 

@@ -1,11 +1,12 @@
+from collections import Counter
 from pathlib import Path
+
 import hydra
 import torch
 import torch.nn.functional as F
+from omegaconf import DictConfig
 from PIL import Image
 from torchvision import transforms
-from collections import Counter
-from omegaconf import DictConfig
 
 from rps.module import RPSModule
 
