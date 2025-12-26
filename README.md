@@ -49,7 +49,6 @@
 ## Структура проекта
 ```
 rps-classifier/
-├── .dvc/ # DVC configs
 ├── conf/ # Hydra configs
 ├── data/ # Data
 │ └── train
@@ -92,7 +91,7 @@ make setup
 make ui
 ```
 
-5. Запустите обучение
+5. Запустите обучение в другом окне терминала
 ```
 make test
 ```
